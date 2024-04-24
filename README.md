@@ -1,13 +1,13 @@
 # MongoDB Dockerfile:
-bash
+```bash
 # Use the official MongoDB image as the base image
 FROM mongo:latest
 
 # Expose MongoDB port
 EXPOSE 27017
-
+```
 # Backend Dockerfile:
-  bash
+ ``` bash
 # Use the official NodeJS image as the base image
   FROM node:latest
 
@@ -28,10 +28,10 @@ EXPOSE 5000
 
 # Command to run the server
 CMD ["node", "index.js"]
-
+```
   
 # FrontEnd Dockerfile:
-  bash
+  ```bash
   # Use Node.js image as base
 FROM node:latest AS build
 
